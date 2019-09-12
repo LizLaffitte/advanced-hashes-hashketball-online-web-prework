@@ -177,7 +177,9 @@ def long_name_steals_a_ton?
    end
    
    team_details[:players].each do |x, y| 
-     p x[:player_name]
+     if x[:player_name] == long_name
+      p most_steals
+     end
      
       #&& player[:steals] == most_steals
     #  p player[:player_name]
