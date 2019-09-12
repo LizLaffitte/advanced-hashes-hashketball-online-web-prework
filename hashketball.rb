@@ -168,7 +168,6 @@ end
 
 def long_name_steals_a_ton?
   long_name = player_with_longest_name
-  p long_name
   most_steals = 0 
   steals= []
   game_hash.each do |team, team_details|
