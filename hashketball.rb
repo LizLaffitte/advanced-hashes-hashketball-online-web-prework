@@ -176,8 +176,9 @@ def long_name_steals_a_ton?
     most_steals = steals.max
    end
    
-   playerone = team_details[:players].find {|x| x == long_name}
-     puts playerone
+   team_details[:players].each do |x| 
+     p x
+     
       #&& player[:steals] == most_steals
     #  p player[:player_name]
      # p player[:steals]
