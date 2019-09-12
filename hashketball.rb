@@ -176,7 +176,7 @@ def long_name_steals_a_ton?
     most_steals = steals.max
    end
    
-   team_details[:players][:player_name].each do |x| 
+   team_details[:players].each do |x, y| 
      p x
      
       #&& player[:steals] == most_steals
